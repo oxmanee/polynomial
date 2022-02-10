@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "b73040bc-39e8-42a5-8526-bfc881558adf",
+		"name": "polynomial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "calculate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"x\": 3,\n    \"y\": 31,\n    \"z\": 51\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:80/polynomial/calculate",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"polynomial",
+						"calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dataset",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"x\": 3,\n    \"y\": 31,\n    \"z\": 51\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:80/polynomial/dataset",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"polynomial",
+						"dataset"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
